@@ -1,1 +1,1 @@
-resource "null_resource" "changed" {}
+resource "null_resource" "changed_2" {}
