@@ -15,4 +15,7 @@ data "aws_ami" "amazon-linux-2" {
 resource "aws_instance" "example" {
   instance_type = "t2.micro"
   ami           = data.aws_ami.amazon-linux-2.id
+  tags = {
+    Name = "amit_and_elad_test"
+  }
 }
