@@ -16,6 +16,14 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"
   ami           = data.aws_ami.amazon-linux-2.id
   tags = {
-    Name = "amit_and_elad_test"
+    Name = "didi_and_elad_test"
+  }
+}
+
+resource "aws_instance" "example-didi" {
+  instance_type = "t2.micro"
+  ami           = data.aws_ami.amazon-linux-2.id
+  tags = {
+    Name = "only_didi_test"
   }
 }
